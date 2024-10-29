@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Auth Form</title>
+</head>
+<body>
+  <div class="container">
+    <div class="carte">
+      <div class="heady">
+        <h2>Role utilisateur</h2>
+        <p class="mail"><i class="fa-regular fa-circle-user"></i> akonkwaushindi@gmail.com</p>
+      </div>
+      <div class="navbar">
+        <button id="encadreurBtn" class="roleBtn active" onclick="authType('encadreur')">Encadreur</button>
+        <button id="adminBtn" class="roleBtn" onclick="authType('admin')">Admin</button>
+      </div>
+      <p class="academ" id="academ">Année académique</p>
+      <p class="info" id="info">Chargement des données...</p>
+      <button class="continueBtn" onclick="valider()">Continuer</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
